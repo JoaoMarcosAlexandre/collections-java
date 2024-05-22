@@ -50,7 +50,7 @@ public class ListaDeTarefas {
         ListaDeTarefas listaDeTarefas = new ListaDeTarefas();
 
         //Adicionando lista de tarefas
-        listaDeTarefas.adicionarTarefa("Comprar maccarrão");
+        listaDeTarefas.adicionarTarefa("Comprar macarrão");
         listaDeTarefas.adicionarTarefa("Estudar na DIO");
         listaDeTarefas.adicionarTarefa("Academia");
 

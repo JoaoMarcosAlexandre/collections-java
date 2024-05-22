@@ -25,7 +25,7 @@ public List<Livro> pesquisarAutor (String autor){
     return livroPorAutor;
 }
 
-public List<Livro> pesquisaAno (int anoInicio, int anoFim){
+public List<Livro> pesquisarAno (int anoInicio, int anoFim){
     List<Livro> livroPorAno = new ArrayList<>();
     if(livroList.isEmpty()){
         for(Livro  l: livroList){
@@ -49,4 +49,18 @@ public Livro pesquisarTitulo(String titulo) {
     }
     return livroPorTitulo;
 }
+
+public static void main(String[] args) {
+    CatalogoLivros catalogolivros = new CatalogoLivros();
+    catalogolivros.selecionarLivro("Livro 1", "autor 1", 2000);
+    catalogolivros.selecionarLivro("Livro 2", "autor 2", 2002);
+    catalogolivros.selecionarLivro("Livro 3", "autor 3", 2004);
+    catalogolivros.selecionarLivro("Livro 4", "autor 4", 2005);
+
+    System.out.println(catalogolivros.pesquisarAutor("autor 2"));
+    System.out.println(catalogolivros.pesquisarAno(2000, 2002));
+    System.out.println(catalogolivros.pesquisarTitulo("Livro 4"));
+}
+
+
 }

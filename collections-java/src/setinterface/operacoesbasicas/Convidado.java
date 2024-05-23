@@ -12,22 +12,15 @@ public class Convidado {
     public String getNome(){
         return nome;
     }
-
-    public int getCodigoConvite() {
-       return codigoConvite;
-    }
-
-    @Override
-    public boolean equals(Object o){
-        if (this == o) return true;
-        if (!(o instanceof Convidado convidado)) return false;
-        return getCodigoConvite() == convidado.getCodigoConvite();
+    public int getCodigoConvite(){
+        return codigoConvite;
     }
 
     @Override
     public String toString(){
-        return "Convidado (" + "nome" +
-        nome + '\'' + "codigoConvite" + codigoConvite +
+        return "Convidado(" +
+        "nome: " + nome + '\'' +
+        ", codigoConvite" + codigoConvite +
         ')';
     }
 }
